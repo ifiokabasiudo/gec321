@@ -86,7 +86,7 @@ export default function Home(req, res) {
                   <div className="lecture-mate">
                       <h3>Lecture_Mate_Prototype</h3>
                       <p>We trained the model for GEC321. Now imagine you had the power to do that yourselves? <br/> The possibilities are endless !!!</p>
-                      <p>If you loved or disliked the app. Please we'd like you to join our community and give your feedback on what we can do to improve, for your utmost satisfaction. We'll also be keeping you up to date with the progess and difficulties we face while buiding the app. So be expectant. The link is: <a href="https://t.me/NEARCommunity/8/25">https://t.me/NEARCommunity/8/25</a></p>
+                      <p>Join our community to provide feedback on the app in order to help us improve it to your satisfaction. Stay updated on our progress and challenges during development. Be expectant! Join us at: <a href="https://t.me/NEARCommunity/8/25">https://t.me/NEARCommunity/8/25</a></p>
                       <p>Ask your GEC321 questions!</p>  
                   </div>
                 </div>
