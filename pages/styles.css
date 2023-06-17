@@ -1,0 +1,86 @@
+html, body, main {
+  width: 100%;
+  background-color: #1c1c29;
+  color: #38383d;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+.sky-logo {
+  border-radius: 100%;
+  margin-right: 3%;
+}
+
+.loader {
+    margin-bottom: 2%;
+  }
+
+input:focus {
+  /* box-shadow: ; */
+  border: 2px solid;
+  border-color:  rgb(28, 28, 41, 0.5) !important;
+  box-shadow: 0 0 3px rgba(28, 28, 41, 0.3) !important;
+  outline: 0 none;
+}
+
+.q-button {
+  margin: 2% 0%;
+  width: 100%;
+  color: #1c1c29 !important;
+  border: 1px solid #1c1c29 !important;
+}
+
+.q-button:hover {
+  background-color: #1c1c29 !important;
+  color: white !important;
+}
+
+.q-form {
+  margin: 5% 0%; 
+}
+
+.body {
+  width: 70%;
+  background-color: #1c1c29;
+  margin: 1% auto;
+}
+
+.sky-waiters {
+  width: 100%;
+  background-color: lightsteelblue;
+  border-radius: 25px;
+  padding: 5%;
+  display: flexbox;
+  margin: 5% 1%;
+  border-style: solid;
+}
+.lecture-mate {
+  width: 100%;
+  display: inline-block;
+  background-color: lightsteelblue;
+  border-radius: 25px;
+  padding: 5%;
+  display: flexbox;
+  margin: 5% 1%;
+  border-style: solid;
+}
+.form {
+  margin-top: 1%;
+  background-color: lightsteelblue;
+  border-radius: 25px;
+  padding: 2%;
+  display: block flexbox;
+  width: 100%;
+  border-style: solid;
+}
+.query {
+  text-align: center;
+  padding-bottom: 2%;
+}
+@media screen and (max-width: 992px){
+  h3 {
+    text-align: center;
+  }  
+}
