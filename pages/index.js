@@ -12,13 +12,13 @@ export default function Home(req, res) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-    
+
         const formData = new FormData();
         const myFile = document.querySelector("input[type='file']");
         console.log(myFile);
         formData.append("file", myFile.files[0]);
-    
-        const response = 
+
+        const response =
         await fetch("http://localhost:4000/api/upload/", {
           method: "POST",
           body: formData,
@@ -34,9 +34,9 @@ export default function Home(req, res) {
           return;
         }else{
           alert(data.error || new Error(`Request failed with status ${response.status}`));
-        }    
+        }
       }
-      
+
       const onSubmit = async (error) => {
         error.preventDefault();
         setLoading(true);
@@ -66,7 +66,7 @@ export default function Home(req, res) {
           console.error(error);
           alert(error.message);
           setLoading(false);
-        } 
+        }
       }
 
     return (
@@ -84,17 +84,17 @@ export default function Home(req, res) {
               <div className="row">
                 <div className="col-lg-6">
                   <div className="lecture-mate">
-                      <h3>Lecture_Mate_Prototype</h3>
-                      <p>We trained the model for GEC321.  
+                      <h3>Lecture_Mate_Prototype me</h3>
+                      <p>We trained the model for GEC321.
                             <br>imagine you had the power to do that yourselves, The possibilities are endless !!!</p>
                       <p>Join our community to provide feedback on the app in order to help us improve it to your satisfaction. Stay updated on our progress and challenges during development. Be expectant! Join us at: <a href="https://t.me/NEARCommunity/8/25">https://t.me/NEARCommunity/8/25</a></p>
-                      <p>Ask your GEC321 questions!</p>  
+                      <p>Ask your GEC321 questions!</p>
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="sky-waiters">
-                    <h3><Image 
-                      src={ Logo } 
+                    <h3><Image
+                      src={ Logo }
                       width={50}
                       height={50}
                       alt="sky waiter"
@@ -114,8 +114,8 @@ export default function Home(req, res) {
                             <input type="text"
                             className="form-control"
                             placeholder="Ask away !"
-                            id="query" 
-                            name="query" 
+                            id="query"
+                            name="query"
                             value={question}
                             onChange={({target}) => nextQuestion(target?.value)}>
                             </input>
@@ -128,7 +128,7 @@ export default function Home(req, res) {
               </div>
             </div>
         </div>
- 
+
         </main>
    );
 }
